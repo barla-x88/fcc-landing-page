@@ -33,6 +33,9 @@ header {
   padding: 0 10%;
 }
 
+h2 {
+  text-transform: uppercase;
+}
 #nav-bar {
   height: 100%;
   display: flex;
@@ -177,4 +180,50 @@ small::before {
   max-width: 100%;
   height: auto;
   margin-top: 2.6rem;
+}
+
+/* Styles for Form */
+
+.form {
+  margin: 34px 10%;
+  color: var(--hero-background);
+}
+
+.form h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.form p {
+  font-size: 1.4rem;
+  line-height: var(--default-lineHeight);
+  margin-bottom: 2.6rem;
+}
+
+.form input {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form input[type='email'] {
+  border: none;
+  border-bottom: 1px solid var(--hero-ctaColor);
+  min-width: 246px;
+  max-width: 90%;
+  margin-bottom: 2.8rem;
+  padding: 1rem;
+  outline: none;
+}
+
+.form input[type='submit'] {
+  padding: 10px;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  background-color: var(--hero-ctaColor);
+  color: var(--hero-textColor);
+  padding: 10px;
+  font-weight: bold;
 }
