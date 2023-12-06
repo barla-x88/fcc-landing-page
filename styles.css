@@ -249,3 +249,55 @@ span.reader {
   display: block;
   font-weight: bold;
 }
+
+.about-author {
+  background-color: var(--hero-background);
+  color: var(--hero-textColor);
+  border: 0.1px solid transparent;
+}
+
+.author-info-container {
+  margin: 6rem 10%;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.author-info-container h2 {
+  margin-top: 28px;
+  margin-bottom: 36px;
+}
+
+.author-image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 180px;
+  padding: 1rem;
+  border: 1px solid var(--hero-textColor);
+}
+
+.author-text {
+  margin: 3rem auto;
+  font-size: 1.4rem;
+  line-height: var(--default-lineHeight);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+footer {
+  height: 12vh;
+  background-color: var(--topics-bg);
+}
+
+.social-links {
+  text-decoration: underline;
+}
+
+.social {
+  display: inline-block;
+  border: none;
+  width: 28px;
+  height: 28px;
+  margin: 10px;
+}
