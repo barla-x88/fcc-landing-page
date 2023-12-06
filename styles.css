@@ -46,6 +46,7 @@ h2 {
 }
 
 #nav-bar ul {
+  list-style-type: none;
   display: none;
 }
 
@@ -180,6 +181,7 @@ small::before {
 #book-topics video {
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
   margin-top: 2.6rem;
 }
 
