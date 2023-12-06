@@ -35,6 +35,8 @@ header {
 
 h2 {
   text-transform: uppercase;
+  text-align: center;
+  font-size: 1.8rem;
 }
 #nav-bar {
   height: 100%;
@@ -98,7 +100,7 @@ main {
 }
 
 .hero-text h1 {
-  font-size: 1.8rem;
+  font-size: 1.85rem;
   text-align: center;
 }
 
@@ -144,12 +146,11 @@ small::before {
 /* Book topics styles */
 
 #book-topics {
-  margin: 34px 10%;
+  margin: 6rem 10%;
   color: var(--hero-background);
 }
 
 #book-topics > h2 {
-  font-size: 1.6rem;
   margin-bottom: 2.4rem;
   text-align: center;
 }
@@ -185,13 +186,11 @@ small::before {
 /* Styles for Form */
 
 .form {
-  margin: 34px 10%;
+  margin: 6rem 10%;
   color: var(--hero-background);
 }
 
 .form h2 {
-  text-align: center;
-  font-size: 1.6rem;
   margin-bottom: 2.4rem;
 }
 
@@ -225,5 +224,28 @@ small::before {
   background-color: var(--hero-ctaColor);
   color: var(--hero-textColor);
   padding: 10px;
+  font-weight: bold;
+}
+
+/* Testimonial styles */
+
+#testimonials {
+  margin: 6rem 10%;
+  color: var(--hero-background);
+}
+
+#testimonials h2 {
+  margin-bottom: 2.4rem;
+}
+
+.testimony {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: var(--default-lineHeight);
+  margin-bottom: 3.4rem;
+}
+
+span.reader {
+  display: block;
   font-weight: bold;
 }
