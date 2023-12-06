@@ -9,12 +9,90 @@
   <body>
     <header id="header">
       <nav id="nav-bar">
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" id="header-img" />
+        </div>
         <ul>
-          <li class=".nav-link">book topics</li>
-          <li class=".nav-link">testimonials</li>
-          <li class=".nav-link">about the Author</li>
+          <li class="nav-link">
+            <a href="#book-topics">book topics</a>
+          </li>
+          <li class="nav-link">testimonials</li>
+          <li class="nav-link">about the Author</li>
         </ul>
       </nav>
     </header>
+    <main>
+      <div class="hero">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            From Markup to Magic: A Complete Guide to HTML and JavaScript
+          </h1>
+          <p class="hero-intro-text">
+            Embark on a transformative journey from HTML markup to JavaScript
+            magic with this comprehensive guide. Dive into HTML5 essentials and
+            master basic JavaScript for interactive web development. Unleash the
+            power of code and turn your ideas into digital wonders.
+          </p>
+          <div class="hero-btn-container">
+            <a href="#">Learn More</a>
+            <a href="#">Buy Now</a>
+          </div>
+          <small>Available in Hardcover, PDF and Kindle edition</small>
+        </div>
+        <div class="hero-img">
+          <img
+            src="./assets/images/book_image.png"
+            alt="book image - From markup to magic"
+          />
+        </div>
+      </div>
+      <div id="book-topics" class="book-topics">
+        <h2>What This Book Covers</h2>
+        <div class="topics-container">
+          <div class="book-topics-text">
+            <img src="./assets/images/html.jpg" alt="semantic HTML" />
+            <p>
+              Semantic HTML Structure: Learn the art of crafting meaningful and
+              organized web pages using the latest HTML5 tags.
+            </p>
+          </div>
+          <div class="book-topics-text">
+            <img
+              src="./assets/images/responsive_sites.jpg"
+              alt="Responsive design"
+            />
+            <p>
+              Responsive Design Techniques: Explore responsive web design
+              principles for creating visually stunning and adaptable websites.
+            </p>
+          </div>
+          <div class="book-topics-text">
+            <img src="./assets/images/html_forms.jpg" alt="HTML forms" />
+            <p>
+              Form Handling and Validation: Dive into HTML forms and JavaScript
+              validation to enhance user interaction and data integrity.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./assets/images/javascript.jpg"
+              alt="javascript DOM manipulations"
+            />
+            <p>
+              DOM Manipulation: Unlock the secrets of the Document Object Model
+              (DOM) to dynamically update and modify web page content.
+            </p>
+          </div>
+        </div>
+        <div>
+          <video controls preload="metadata">
+            <source
+              src="./assets/videos/from_markup_to_magic.m4v"
+              type="video/x-m4v"
+            />
+          </video>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
