@@ -419,6 +419,7 @@ footer {
 
   .form {
     margin: 0 15%;
+    text-align: center;
   }
 
   .form p {
@@ -432,6 +433,9 @@ footer {
     font-size: 1.6rem;
   }
 
+  .author-info-container {
+    margin: 4.2rem 15%;
+  }
   .author-info-content {
     display: flex;
     flex-direction: row-reverse;
@@ -444,5 +448,20 @@ footer {
 
   .author-text {
     font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  #testimonials,
+  #book-topics,
+  .video-container,
+  .form {
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
