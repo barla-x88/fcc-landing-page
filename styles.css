@@ -38,6 +38,7 @@ h2 {
   text-align: center;
   font-size: 1.8rem;
 }
+
 #nav-bar {
   height: 100%;
   display: flex;
@@ -45,13 +46,36 @@ h2 {
   justify-content: space-between;
 }
 
-#nav-bar ul {
+.navbar {
+  display: flex;
+  height: 0;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
   list-style-type: none;
-  display: none;
+  background-color: #1e786d;
+  position: absolute;
+  width: 100%;
+  top: 10vh;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-navbar {
+  height: 90vh;
+}
+
+#nav-bar ul a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--hero-textColor);
+  text-transform: capitalize;
 }
 
 .hamburger {
   width: 15%;
+  z-index: 1000;
 }
 
 .hamburger div {
@@ -187,6 +211,7 @@ small::before {
   height: auto;
   margin: 0 auto;
   margin-top: 2.6rem;
+  z-index: -999;
 }
 
 /* Styles for Form */
@@ -316,6 +341,13 @@ footer {
 
   #nav-bar ul {
     display: flex;
+    position: relative;
+    top: auto;
+    left: auto;
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    flex-direction: row;
   }
 
   #nav-bar ul li {
@@ -464,5 +496,20 @@ footer {
   .form {
     margin-left: 20%;
     margin-right: 20%;
+  }
+}
+
+@media (max-width: 850px) {
+  #nav-bar ul li {
+    margin-top: 40px;
+  }
+
+  #nav-bar ul a {
+    width: 200px;
+    padding: 10px;
+  }
+
+  #nav-bar ul a:active {
+    border-bottom: 2px solid white;
   }
 }

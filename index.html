@@ -12,7 +12,7 @@
         <div>
           <img src="./assets/images/logo.svg" alt="logo" id="header-img" />
         </div>
-        <ul>
+        <ul class="navbar">
           <li>
             <a href="#book-topics" class="nav-link">book topics</a>
           </li>
@@ -216,5 +216,31 @@
       </div>
     </main>
     <footer></footer>
+    <script>
+      const navbar = document.querySelector('#nav-bar ul');
+      const burgers = document.querySelector('.hamburger');
+
+      burgers.addEventListener('click', (e) => {
+        navbar.classList.toggle('show-navbar');
+
+        console.log(e.target);
+      });
+
+      navbar.addEventListener('click', (e) => {
+        if (e.target.classList.contains('nav-link')) {
+          e.preventDefault();
+
+          const element = e.target.getAttribute('href');
+          const { left, top } = document
+            .querySelector(element)
+            .getBoundingClientRect();
+
+          // 120 works fine
+          window.scrollTo(left + window.scrollX, top - 120 + scrollY);
+
+          navbar.classList.toggle('show-navbar');
+        }
+      });
+    </script>
   </body>
 </html>
