@@ -340,6 +340,10 @@ footer {
 }
 
 @media (min-width: 900px) {
+  h2 {
+    font-size: 2.6rem;
+  }
+
   /* Hero content styles */
 
   .hero {
@@ -382,5 +386,63 @@ footer {
     font-size: 1.6rem;
     margin-top: 28px;
     line-height: 190%;
+  }
+
+  /* Book topics styles */
+
+  #book-topics,
+  #testimonials {
+    margin: 13.5rem 15%;
+  }
+
+  .topics-container,
+  .testimonial-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+    grid-auto-rows: auto;
+  }
+
+  .book-topics-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 190%;
+  }
+
+  .video-container {
+    margin: 6rem 15%;
+    display: block;
+  }
+
+  .form {
+    margin: 0 15%;
+  }
+
+  .form p {
+    font-size: 1.6rem;
+  }
+
+  .testimony {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+
+  .author-info-content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10%;
+  }
+
+  .author-info-content > div:first-of-type {
+    width: 60%;
+  }
+
+  .author-text {
+    font-size: 1.6rem;
   }
 }
