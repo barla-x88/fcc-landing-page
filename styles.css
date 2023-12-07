@@ -139,6 +139,10 @@ main {
   margin-left: 1.4rem;
 }
 
+small {
+  font-size: 10px;
+}
+
 small::before {
   content: '* ';
   vertical-align: baseline;
@@ -302,4 +306,81 @@ footer {
   width: 28px;
   height: 28px;
   margin: 10px;
+}
+
+@media (min-width: 850px) {
+  /* Navbar styles */
+  .hero-btn-container a {
+    max-width: 228px;
+  }
+
+  #nav-bar ul {
+    display: flex;
+  }
+
+  #nav-bar ul li {
+    display: inline-block;
+    margin: 0 3rem;
+  }
+  #nav-bar ul a {
+    text-decoration: none;
+    font-size: clamp(16px, 1.8vw, 18px);
+    font-weight: bold;
+    color: var(--hero-textColor);
+    text-transform: capitalize;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  small {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Hero content styles */
+
+  .hero {
+    flex-direction: row-reverse;
+    background-color: var(--hero-background);
+    align-items: center;
+    gap: 5%;
+    justify-content: center;
+    padding: 10rem 15%;
+  }
+
+  .hero-img {
+    width: 45%;
+    margin: 0;
+  }
+
+  .hero-img img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    margin: 0;
+    color: var(--hero-textColor);
+  }
+
+  .hero-text h1 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 1.6rem;
+    margin-top: 28px;
+    line-height: 190%;
+  }
 }
