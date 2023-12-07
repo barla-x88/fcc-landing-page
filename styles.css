@@ -350,13 +350,13 @@ footer {
     flex-direction: row-reverse;
     background-color: var(--hero-background);
     align-items: center;
-    gap: 5%;
+    /* gap: 5%; */
     justify-content: center;
-    padding: 10rem 15%;
+    padding: 10rem 12%;
   }
 
   .hero-img {
-    width: 45%;
+    width: 50%;
     margin: 0;
   }
 
@@ -364,14 +364,15 @@ footer {
     width: 100%;
     max-width: 300px;
     display: block;
-    margin: 0 auto;
+    /* margin: 0; */
+    margin-left: auto;
   }
 
   .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 45%;
+    width: 50%;
     height: 100%;
     margin: 0;
     color: var(--hero-textColor);
@@ -453,8 +454,8 @@ footer {
 
 @media (min-width: 1200px) {
   .hero {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 17%;
+    padding-right: 17%;
   }
 
   #testimonials,
