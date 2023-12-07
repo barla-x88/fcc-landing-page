@@ -33,6 +33,12 @@ header {
   padding: 0 10%;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h2 {
   text-transform: uppercase;
   text-align: center;
